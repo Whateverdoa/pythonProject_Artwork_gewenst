@@ -1,8 +1,11 @@
 # three folder paths based on time and name of folder
 from pathlib import Path
 
-pad_naar_collectie= Path(r'C:\Users\Dhr.Ten Hoonte\PycharmProjects\pythonProject_Artwork_gewenst\
-    testingground\switch_itemnumber_collector_folder')
+pad_naar_test_file= Path(r'C:\Users\Dhr. Ten Hoonte\PycharmProjects\pythonProject_Artwork_gewenst\testingground\Products\H\HELLOPRINT B.V\21063000-21063999\806321063359\806321063359.pdf')
+
+
+pad_naar_collectie= Path(r'C:\Users\Dhr. Ten Hoonte\PycharmProjects\pythonProject_Artwork_gewenst\testingground\switch_itemnumber_collector_folder')
+print(pad_naar_collectie.is_dir())
 klantnamen = ["HELLOPRINT.B.V", "DRUKWERKDEAL.NL", "PRINT.COM"]
 PRODUCTS_path = r'PycharmProjects\pythonProject_Artwork_gewenst\testingground\Products'
 wdir = Path.cwd()
@@ -14,10 +17,12 @@ itemnum_collection = list(pad_naar_collectie.rglob('*.pdf'))
 # dwd_id = "569621"
 # pdc_id = "935321"
 # testingground = r'PycharmProjects\pythonProject_Artwork_gewenst\testingground\Products'
+test_folder = r'PycharmProjects\pythonProject_Artwork_gewenst\testingground\Products\H\HELLOPRINT B.V\21063000-21063999\806321063359'
+test_hp_folder = wdir.home().joinpath(test_folder)
 # wdir = Path.cwd()
 # print(wdir.home().joinpath(testingground))
 # print(wdir.absolute())
-
+# testingground/Products/H/HELLOPRINT B.V/21063000-21063999/806321063359
 # pad_naar_klantNaam_is = Path(...)
 
 
